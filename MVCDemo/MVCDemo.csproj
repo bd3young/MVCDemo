@@ -162,6 +162,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationContextMigrations\202003241727399_Initial.cs" />
+    <Compile Include="ApplicationContextMigrations\202003241727399_Initial.Designer.cs">
+      <DependentUpon>202003241727399_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationContextMigrations\202003241754526_UserRoles.cs" />
+    <Compile Include="ApplicationContextMigrations\202003241754526_UserRoles.Designer.cs">
+      <DependentUpon>202003241754526_UserRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationContextMigrations\Configuration.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -171,6 +180,11 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MembershipController.cs" />
+    <Compile Include="DataContextMigrations\202003241723140_Intial.cs" />
+    <Compile Include="DataContextMigrations\202003241723140_Intial.Designer.cs">
+      <DependentUpon>202003241723140_Intial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContextMigrations\Configuration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -260,6 +274,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApplicationContextMigrations\202003241727399_Initial.resx">
+      <DependentUpon>202003241727399_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationContextMigrations\202003241754526_UserRoles.resx">
+      <DependentUpon>202003241754526_UserRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContextMigrations\202003241723140_Intial.resx">
+      <DependentUpon>202003241723140_Intial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

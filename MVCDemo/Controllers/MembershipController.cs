@@ -61,6 +61,7 @@ namespace MVCDemo.Controllers
         }
 
         // GET: Membership/Edit/5
+        [Authorize(Roles = "Admin, Manager")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
